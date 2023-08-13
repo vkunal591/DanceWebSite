@@ -1,0 +1,59 @@
+extends base.pug 
+
+block script 
+ 
+block style
+    style
+      include ../static/style.css
+      include ../static/mobstyle.css
+    
+
+
+block content 
+    
+    
+    section#introSection
+        div Welcome to Mr..'s Dance Academy
+        div.small Eat Sleep Dance Repeat
+
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/2.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/3.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+    section#sponsorsSection
+        h2 Our Sponsors
+        div.spo
+          div.spon 
+            img(src="/static/img/spon1.png", alt="sponcer")
+          div.spon 
+            img(src="/static/img/spon2.png", alt="sponcer")
+          div.spon 
+            img(src="/static/img/spon3.png", alt="sponcer")
+          div.spon 
+            img(src="/static/img/spon4.png", alt="sponcer")
+          div.spon 
+            img(src="/static/img/spon5.png", alt="sponcer")
+block footer
+
+    script
+      include ../static/index.js

@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    title Mr..
+      Dance Academy
+
+    style 
+        include ../static/style.css
+        include ../static/mobstyle.css
+        
+    block script 
+
+    block style 
+        
+   
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/logo.png" alt="logo")
+                | MDA
+            li #[a(href="/home") Home]
+            li #[a(href="/about") About]
+            li #[a(href="/services") Services]
+            li #[a(href="/classinfo") Class Info]
+            li #[a(href="/contact") Contact Us]
+    block content 
+
+    
+
+    footer#footer
+        | © Designed by Kunal Verma || MR.Coader ||, All Rights reserved
+
+    block footer

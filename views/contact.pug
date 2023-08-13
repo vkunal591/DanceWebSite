@@ -1,0 +1,43 @@
+extends base.pug
+
+block script
+
+block style 
+    style   
+      
+      include ../static/mobstyle.css
+
+block content 
+  form.form(action="/contact", method="post")
+    h1.form-title Contact Form
+    div.input-group.mb-3
+      span.input-group-text#basic-addon1 
+      label.inp-lab(for="name") Name :
+      input.form-control(type="text", placeholder="Kunal Verma", name="name" aria-label="name", aria-describedby="basic-addon1")
+    div.input-group.mb-3
+          span.input-group-text#basic-addon1 
+          label.inp-lab(for="phone") Phone :
+          input.form-control(type="number", placeholder="91XXXXXXX", name="phone" aria-label="phone", aria-describedby="basic-addon2")
+
+    div.input-group.mb-3
+      label.inp-lab Email Id :
+      input.form-control(type="text", placeholder="username@example.com",name="email" aria-label="email id", aria-describedby="basic-addon3")
+     
+    div.input-group.mb-3
+      span.input-group-text#basic-addon1 
+      label.inp-lab(for="name") Address :
+      input.form-control(type="Text", placeholder="Address....", name="address" aria-label="address", aria-describedby="basic-addon4")
+   
+    div.input-group.mb-3
+          span.input-group-text#basic-addon1 
+          label.inp-lab(for="desc") Description :
+          input.form-control(type="Text", placeholder="description....", name="description" aria-label="desc", aria-describedby="basic-addon5")
+
+    div.input-group
+      span.input-group-text
+      label.inp-lab(for="area") With textarea :
+      textarea.form-control(aria-label="With textarea", name="text") 
+  
+    div.input-group
+      span.input-group-text
+      button.subbtn.form-contro(type="submit") Submit
